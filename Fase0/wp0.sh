@@ -9,6 +9,8 @@ DB_USER=wordpress_user
 DB_PASSWORD=wordpress_password
 IP_PRIVADA_FRONT=localhost
 IP_MYSQL_SERVER=localhost
+WP_SITEURL=54.208.191.174
+WP_HOME=54.208.191.174
 
 #Actualizamos lista de paquetes
 apt update
@@ -59,8 +61,8 @@ sed -i "s/password_here/$DB_PASSWORD/" wp-config.php
 sed -i "s/localhost/$IP_MYSQL_SERVER/" wp-config.php
 
 # Configuramos la direccion de wordpress y direccion del sitio
-echo "define('WP_SITEURL', 'http://54.208.191.174/wordpress');" >> wp-config.php
-echo "define('WP_HOME', 'http://54.208.191.174');" >> wp-config.php
+echo "define('WP_SITEURL', 'http://$WP_SITEURL/wordpress');" >> wp-config.php
+echo "define('WP_HOME', 'http://$WP_HOME');" >> wp-config.php
 
 # Copiamos el archivo wordpress/index.php a /var/www/html
 cp index.php /var/www/html
