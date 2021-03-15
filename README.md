@@ -2,7 +2,7 @@
 En esta práctica tendremos que realizar la instalación de un sitio WordPress haciendo uso de los servicios de Amazon Web Services (AWS)
 
 Despliega la última versión de Worpress utilizando la siguiente arquitectura propuesta:
-![]()
+![](https://raw.githubusercontent.com/joseean29/Practica8/main/estructura.png)
 
 La arquitectura estará formada por:
 - Un balanceador de carga, implementado con un Apache HTTP Server configurado como proxy inverso.
